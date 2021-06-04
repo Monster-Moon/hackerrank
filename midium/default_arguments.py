@@ -32,3 +32,4 @@ for _ in range(queries):
         print_from_stream(n)
     else:
         print_from_stream(n, OddStream())
+

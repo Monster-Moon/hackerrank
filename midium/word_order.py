@@ -18,3 +18,5 @@ d = OrderedCounter(input() for _ in range(int(input())))
 print(len(d))
 print(*d.values())
 
+
+

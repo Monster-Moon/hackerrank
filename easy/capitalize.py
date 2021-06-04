@@ -5,6 +5,7 @@ def solve(s):
     s_vec = s.split(' ')
     return(' '.join([i.capitalize() for i in s_vec]))
 
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
@@ -24,9 +25,6 @@ def solve(s):
         word.append(''.join([i[j].upper() if j == 0 else i[j] for j in range(len(i))]))
 
     return(' '.join(word))
-
-
-
 
 
 
