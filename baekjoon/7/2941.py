@@ -1,19 +1,12 @@
 
-import re
+
 
 inp = input()
 p = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
+for i in p:
+    inp = inp.replace(i, '1')
 
-p_target = [i for i in p if i in inp]
-
-s = 0
-for i in p_target:
-    s += inp.count(i)
-    inp = inp.replace(i, '')
-
-
-
-print(s + len(inp))
+print(len(inp))
 
 
 
